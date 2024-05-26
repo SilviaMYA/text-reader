@@ -1,11 +1,21 @@
+import { useState } from "react";
 
+const TextReader = ({text, onTextChange}) => {
+    const handleChange = (event) => {
+        onTextChange(event.target.value);
+      };
 
-const TextReader = () => {
-    return(
-        <>
-        <h3>world</h3>
-        </>
-    );
-}
+  return (
+    <>
+      <textarea
+        value={text}
+        onChange={handleChange}
+        rows="10"
+        cols="50"
+        placeholder="Enter text here..."
+      ></textarea>
+    </>
+  );
+};
 
 export default TextReader;

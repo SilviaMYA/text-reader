@@ -1,12 +1,12 @@
 import './App.css';
 
-import TextReader from './components/TextReader';
+import Page from './Pages/Page';
 
 function App() {
   return (
     <div className="App">
       <h1>hello</h1>
-      <TextReader />
+      <Page />
     </div>
   );
 }
