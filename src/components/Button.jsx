@@ -1,5 +1,5 @@
-const Button = ({ btnText, onClickHandler }) => {
-  return <button onClick={onClickHandler}>{btnText}</button>;
+const Button = ({ btnText, onClickHandler, icon }) => {
+  return <button onClick={onClickHandler}>{icon} {btnText}</button>;
 };
 
 export default Button;

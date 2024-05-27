@@ -5,7 +5,7 @@ import Page from './Pages/Page';
 function App() {
   return (
     <div className="App">
-      <h1>hello</h1>
+      <h1>Text Reader</h1>
       <Page />
     </div>
   );

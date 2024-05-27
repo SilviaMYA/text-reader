@@ -1,6 +1,8 @@
 import TextReader from "../components/TextReader";
 import TextTranslated from "../components/TextTranslated";
 import Button from "../components/Button";
+import { FaVolumeUp } from 'react-icons/fa';
+import { FaSync } from 'react-icons/fa';
 
 import { useState } from "react";
 
@@ -32,8 +34,10 @@ const Page = () => {
         // onReadAloud={handleReadAloud}
       />
       {/* <TextTranslated text={text}/> */}
-      <Button btnText="Read Aloud" onClickHandler={handleReadAloud} />
-      <Button btnText="Clear Text" onClickHandler={clearText} />
+      <div>
+        <Button btnText="Read Aloud" icon={<FaVolumeUp/>} onClickHandler={handleReadAloud} />
+        <Button btnText="Clear Text" icon={<FaSync/>} onClickHandler={clearText} />
+      </div>
     </>
   );
 };
