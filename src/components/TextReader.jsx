@@ -1,4 +1,3 @@
-import { useState } from "react";
 
 const TextReader = ({text, onTextChange}) => {
     const handleChange = (event) => {

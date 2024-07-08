@@ -1,17 +1,12 @@
-import { useState } from "react";
 
-const TextTranslated = () => {
-
-
+const TextTranslated = (props) => {
   return (
-    <>
       <textarea
-        // value={props.text}
-        readOnly="readonly"
+        value={props.text}
         rows="10"
         cols="50"
-      ></textarea>
-    </>
+        readOnly="readonly"
+      />
   );
 };
 
